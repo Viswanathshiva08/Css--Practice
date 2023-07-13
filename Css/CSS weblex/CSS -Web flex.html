@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+
+<style>
+
+@media(min-width:768px) {
+    .container{
+    display: flex;
+ /*  align-items: flex-end;
+ align-items: center;
+ flex-direction:column;
+*/
+
+}
+
+.container-2 {
+    display: flex;
+   /* justify-content: flex-start;
+   
+     justify-content: flex-end;
+        justify-content: center;
+
+        justify-content: space-between;
+   */
+   justify-content: space-between;
+}
+
+}
+
+
+
+
+.container div, .container-2 div{
+    border: 1px solid rgb(46, 46, 157);
+    padding: 10px;
+}
+
+
+.box-one{
+    flex:1;
+    order:1;
+}
+
+.box-two{
+    flex:2;
+    order:3;
+}
+
+.box-three{
+    flex:2;
+    order:2;
+}
+
+.container-2-box {
+    flex: basis 33%;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="container">
+<div class="box-one">
+<h3> Box One</h3>
+<p>As of 2022, the record for the most wins is held by Arsenal with 14 victories.</p>
+</div>
+
+<div class="box-two">
+    <h3> Box Two</h3>
+    <p>As of 2022, the record for the most wins is held by Arsenal with 14 victories.</p>
+</div>
+
+<div class="box-three">
+    <h3> Box Three</h3>
+    <p>As of 2022, the record for the most wins is held by Arsenal with 14 victories.</p>
+</div>
+
+</div>
+
+
+<div class="container-2">
+    <div class="container-2-box">
+    <h3> Box Four</h3>
+    <p>"The quick brown fox jumps over the lazy dog"</p>
+    </div>
+    
+    <div class="container-2-box">
+        <h3> Box Five</h3>
+        <p>"The quick brown fox jumps over the lazy dog"</p>
+    </div>
+    
+    <div class="container-2-box">
+        <h3> Box Six</h3>
+        <p>"The quick brown fox jumps over the lazy dog"</p>
+    </div>
+    
+    </div>
+
+</body>
+</html>

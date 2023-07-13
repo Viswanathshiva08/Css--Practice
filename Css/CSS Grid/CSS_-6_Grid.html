@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 1fr;
+    grid-gap: 5em;
+   grid-auto-rows: minmax(100px,auto);
+
+
+}
+
+
+.nested {
+    display: grid;
+    grid-template-columns: repeat(2,6fr);
+    grid-auto-rows: 60px;
+    grid-gap: 1em;
+
+}
+    .wrapper > div{
+        background-color:rgb(191, 127, 255);
+        padding:1em;
+    }
+    .wrapper > div:nth-child(odd) {
+        background-color:chartreuse;
+    }
+
+    .nested > div{
+        border: 10px solid #333;
+        padding: 1em;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Quotes
+        </div>
+        <div>
+             "You only live once, but if you do it right, once is enough." — Mae West
+        </div>
+        <div class="nested">
+           <div>one</div>
+           <div>two</div>
+           <div>three</div>
+
+           <div>four</div>
+           <div>five</div>
+           <div>six</div>
+
+           
+           
+        </div>
+        
+</body>
+</html>

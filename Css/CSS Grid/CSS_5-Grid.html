@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+
+<title>Grid Layout</title>
+<style>
+
+.wrapper {
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-column-gap: 10em;
+    grid-row-gap: 10em;
+    grid-gap: 10em;
+}
+
+.wrapper > div{
+    background-color: rgb(90, 44, 44);
+    padding:1em;
+}
+.wrapper > div:nth-child(even) {
+    background-color: rgb(231, 220, 220);
+}
+
+
+</style>
+
+</head>
+
+<body>
+<div class="wrapper">
+ 
+    <div>
+        "The purpose of our lives is to be happy." — Dalai Lama
+    </div>
+        
+    <div>
+        "The purpose of our lives is to be happy." — Dalai Lama     
+    </div> 
+    
+    <div>
+        "The purpose of our lives is to be happy." — Dalai Lama  
+    </div>
+    
+    <div>
+        "The purpose of our lives is to be happy." — Dalai Lama
+
+</div>
+
+
+
+</body>
+
+</html>
